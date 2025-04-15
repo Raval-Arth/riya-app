@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
+        <div className="px-4 container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Cloud className="h-6 w-6" />
@@ -38,7 +38,6 @@ export default function Home() {
                 <Link href="/get-started">
                   <Button>Get Started</Button>
                 </Link>
-                <Button variant="outline">Learn More</Button>
               </div>
             </div>
           </div>
@@ -130,16 +129,8 @@ export default function Home() {
               <span className="font-bold">CloudAdopt</span>
             </div>
             <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-              © 2024 CloudAdopt. All rights reserved.
+              ©{new Date().getFullYear()} CloudAdopt. All rights reserved.
             </p>
-            <nav className="flex items-center space-x-4">
-              <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
-                Terms of Service
-              </Link>
-            </nav>
           </div>
         </div>
       </footer>
